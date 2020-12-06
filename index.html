@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shivani verma Blog</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id = "header" class="section10" >
+            <img alt ="" class="img-circle" src="circle-cropped (1).png">
+            <p>Shivani Verma</p>
+        </div>
+        <div class="section">
+            <h1><span>About me</span></h1>
+            <p>Hey! I'm <strong>Shivani verma</strong> coding has change my world. It's not just about apps.Learning to code gave my <em>problem-solving Skills </em>
+                and a way to communicate with others on a technical level. I can also develop website and use my coding skills to get a better job .And I learnd it all at <strong>Online Courses</strong> like.<em>Udemy,Youtube</em>
+                where thery build  your self -esteem and keep you motivated. 
+             </p>
+        </div>
+        <div class="section1">
+            <h1>
+            <span>My Skills</span></h1>
+            <ul>
+                <li>Full Stack Web Developer</li>
+                <progress min="0" max="100" value="75"></progress>
+                <li>Digital Marketing</li>
+                <progress min="0" max="100" value="68"></progress>
+                <li>Java</li>
+                <progress min="0" max="100" value="70"></progress>
+                
+
+            </ul>
+
+        </div>
+        <div class ="slideshow-container">
+            
+            <div class="mySlides fade">
+                <div class="numbertext">1/4</div>
+                <img class="img-circle" src="circle-cropped (5).png"style="width:50%" background-positon="center">
+                <div class="text">Father</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2/4</div>
+                <img class="img-circle"src="circle-cropped (2).png"style="width:50%">
+                <div class="text">Mother</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3/4</div>
+                <img class="img-circle" src="circle-cropped (3).png"style="width:50%">
+                <div class="text">Sister</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">4/4</div>
+                <img class="img-circle" src="circle-cropped (4).png" style="width:50%">
+                <div class="text">Brother</div>
+            </div>
+            <a class="prev"
+            onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span> 
+          </div>
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+        
+        
+        
+        <div class="section0">
+            <h1>
+            <span>My Hobbies</span></h1>
+            <ul>
+                <li>Dancing</li>
+                <li>Cooking Food</li>
+                <li>Photography</li>
+                <li>Music</li>
+             
+                
+
+            </ul>
+
+        </div>
+
+        <div class="section6">
+            <h1><span>My Media</span></h1>
+         
+          <iframe height="250" width="400" src="dance.mp4"allowfullscreen frameborder="10"></iframe>
+          <iframe padding="10px" margin="10px" height="250" width="400" src="fun.mp4"allowfullscreen frameborder="10"></iframe>
+        </div>
+        <div class="section2">
+            <h1><span>Contact Me</span></h1>
+            <svg  class="face" height="100" width ="100">
+                <circle cx="50" cy ="50" r="50" fill="#FDD835"/>
+                <circle cx="30" cy ="30" r="10" fill="#FFFFFF"/>
+                <circle cx="70" cy ="30" r="10" fill="#FFFFFF"/>
+                <circle cx="30" cy ="30" r="5" fill="#000000"/>
+                <circle cx="70" cy ="30" r="5" fill="#000000"/>
+                <path d="M 30 70 q 20 20 40 0" stroke="#FFFFFF"stroke-width ="5" fill="none"/>
+            </svg>
+            <form>
+                <input name="name"placeholder="Name" type ="text " required /><br/>
+                <input name="Email"placeholder="Email" type ="text " required /><br/>
+                <textarea name ="message" placeholder="Message" required></textarea>
+                <input type="submit" value="SEND" class="submit">
+            </form>
+        </div>
+        <footer>
+        <div class="section3" id="contacts">
+            <h1><span>Follow me</span></h1>
+          <div>
+              <a herf="https://www.facebook.com/shivaniverma02000" >
+                <img src="https://www.transparentpng.com/thumb/facebook-logo/facebook-logo-hd-png-4.png" alt="facebook">
+
+              </a>
+              <a href="#" target="_blank">
+                  <img src="twitter (1).png" alt="twitter">
+
+              </a>
+              <a href="#" target="_blank"><img src="instagram.png"alt="instagram"></a>
+          </div>
+            
+        </div>
+        </footer>
+    <div class="copyright">
+            &copy;2020 MY Blog.ALL rights reserved
+        </div>
+
+    </body>
+</html>
